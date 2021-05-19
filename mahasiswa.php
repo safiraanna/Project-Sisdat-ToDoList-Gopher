@@ -2,7 +2,7 @@
 
 require 'func.php';
 
-$mahasiswa = query("SELECT * FROM mahasiswa");
+$mahasiswa = query("SELECT * FROM mahasiswa JOIN user ON user.npm = mahasiswa.npm");
 
 ?>
 

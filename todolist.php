@@ -2,7 +2,8 @@
 
 require 'func.php';
 
-$tugas = query("SELECT * FROM tugas");
+	$npm = $_GET["npm"];
+	$tugas = query("SELECT * FROM tugas");
 
 ?>
 

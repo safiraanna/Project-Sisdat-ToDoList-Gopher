@@ -2,7 +2,8 @@
 
 require 'func.php';
 
-$matkul = query("SELECT * FROM matkul");
+    $npm = $_GET["npm"];
+    $matkul = query("SELECT * FROM matkul");
 
 ?>
 
@@ -48,9 +49,6 @@ $matkul = query("SELECT * FROM matkul");
 			<?php $i++; ?>
 			<?php endforeach; ?>
 			</table>
-        <div class="back">
-			<a href="todolist.php"> Back</a>
-		</div>
     </div>
 </body>
 </html>

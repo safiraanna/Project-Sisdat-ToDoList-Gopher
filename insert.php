@@ -29,25 +29,25 @@ if( isset($_POST["submit"]) ) {
 <html>
 	<link rel="stylesheet" href="css/styleinsert.css">
 <head>
-	<title>Insert||To Do List Gopher</title>
+	<title>Insert || To Do List Gopher</title>
 </head>
 <body>
-	<div class="topbar">
+<div class="topbar">
         <div class="isitopbar">
-            <a href="dashboard.php?npm=$npm"><img src="img/logoweb.png" alt="logoweb"></a>
+            <a href="dashboard.php?npm=<?= $npm ?>"><img src="img/logoweb.png" alt="logoweb"></a>
         </div>
         <a href="login.php">
             <div class="logout">Logout</div>
         </a>
         <div class="navigasi">
             <ul>
-				<li><a href="dashboard.php?npm=$npm">Dashboard</a></li>
-                <li><a href="profile.php">Profile</a></li>
-                <li><a href="todolist.php?npm=$npm">ToDoList</a></li>
-                <li><a href="matkul.php">Matkul</a></li>
+                <li><a href="dashboard.php?npm=<?= $npm ?>">Dashboard</a></li>
+                <li><a href="profile.php?npm=<?= $npm ?>">Profile</a></li>
+                <li><a href="todolist.php?npm=<?= $npm ?>">ToDoList</a></li>
+                <li><a href="matkul.php?npm=<?= $npm ?>">Matkul</a></li>
             </ul>
         </div>
-    </div> 
+    </div>
 	<div class="konten">
 		<h1>Insert New List</h1>
 		<div class="form">
@@ -81,7 +81,7 @@ if( isset($_POST["submit"]) ) {
 			</form>
 		</div>
 	<div class="back">
-		<a href="todolist.php"> Back</a>
+		<a href="todolist.php?npm=<?= $npm ?>"> Back</a>
 	</div>
 	</div>
 

@@ -2,7 +2,8 @@
 
 require 'func.php';
 
-$tugas = query("SELECT * FROM tugas");
+	$npm = $_GET["npm"];
+	$tugas = query("SELECT * FROM tugas");
 
 ?>
 
@@ -15,20 +16,20 @@ $tugas = query("SELECT * FROM tugas");
 <body>
 	<div class="topbar">
         <div class="isitopbar">
-            <a href="dashboard.php?npm=$npm"><img src="img/logoweb.png" alt="logoweb"></a>
+            <a href="dashboard.php?npm=<?= $npm ?>"><img src="img/logoweb.png" alt="logoweb"></a>
         </div>
         <a href="login.php">
             <div class="logout">Logout</div>
         </a>
         <div class="navigasi">
             <ul>
-				<li><a href="dashboard.php?npm=$npm">Dashboard</a></li>
-                <li><a href="profile.php">Profile</a></li>
-                <li><a href="todolist.php?npm=$npm">ToDoList</a></li>
-                <li><a href="matkul.php">Matkul</a></li>
+                <li><a href="dashboard.php?npm=<?= $npm ?>">Dashboard</a></li>
+                <li><a href="profile.php?npm=<?= $npm ?>">Profile</a></li>
+                <li><a href="todolist.php?npm=<?= $npm ?>">ToDoList</a></li>
+                <li><a href="matkul.php?npm=<?= $npm ?>">Matkul</a></li>
             </ul>
         </div>
-    </div> 
+    </div>
 	<div class="konten">
 		<h1>Daftar Tugas</h1>
 		

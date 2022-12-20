@@ -5,7 +5,7 @@
 * Anna Safira Dila (140810200034)
 * Laura Azra Aprilyanti (140810200036)
 
-## Alat dan Bahan
+## Software yang digunakan
 Aplikasi yang digunakan dalam website ini antara lain:
 * XAMPP
 
